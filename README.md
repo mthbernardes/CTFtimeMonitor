@@ -10,10 +10,10 @@ pip install -r dependencies.txt
 #Configuration
 <pre>
 Edit the file CTFtimeMonitor.py,
-line10
+<b>line 10</b>
 group = group_integer_id
 
-line 11
+<b>line 11</b>
 bot = telepot.Bot('Telegram bot API here')
 </pre>
 
