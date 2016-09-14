@@ -21,14 +21,14 @@ def sendCTF():
 
     for result in results:
         msg = ''
-        msg += 'Organizador : %s\n' % result['organizers'][0]['name']
-        msg += 'Titulo: %s\n' % result['title']
-        msg += 'Descricao\n'
+        msg += 'Organizer : %s\n' % result['organizers'][0]['name']
+        msg += 'Title: %s\n' % result['title']
+        msg += 'Description\n'
         msg += result['description']
-        msg += '\nSite do CTF: %s\n' % result['url']
-        msg += 'Tipo CTF: %s\n' % result['format']
-        msg += 'Inicio CTF: %s\n' % result['start']
-        msg += 'Fim CTF: %s\n' % result['finish']
+        msg += '\CTF Website: %s\n' % result['url']
+        msg += 'CTF Style: %s\n' % result['format']
+        msg += 'CTF Start: %s\n' % result['start']
+        msg += 'CTF End: %s\n' % result['finish']
         bot.sendMessage(group,msg)
 
 def main():
