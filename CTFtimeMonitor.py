@@ -25,7 +25,7 @@ def sendCTF():
         msg += 'Title: %s\n' % result['title']
         msg += 'Description\n'
         msg += result['description']
-        msg += '\CTF Website: %s\n' % result['url']
+        msg += '\nCTF Website: %s\n' % result['url']
         msg += 'CTF Style: %s\n' % result['format']
         msg += 'CTF Start: %s\n' % result['start']
         msg += 'CTF End: %s\n' % result['finish']
@@ -33,6 +33,7 @@ def sendCTF():
 
 def main():
     sched.start()
-
+    
+sendCTF()
 while 1:
     main()
