@@ -1,0 +1,4 @@
+APScheduler==3.2.0
+arrow==0.8.0
+telepot==9.1
+requests==2.11.1
