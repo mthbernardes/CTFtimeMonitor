@@ -12,7 +12,6 @@ bot = telepot.Bot('api-here')
 
 @sched.scheduled_job('interval', weeks=1)
 def sendCTF():
-    print 'Sending'
     now = arrow.now()
     past = now.replace(day=+30)
     api = "https://ctftime.org/api/v1/events/?limit=%d&start=%d&finish=%d" % (3,now.timestamp,past.timestamp)
