@@ -7,8 +7,8 @@ import telepot
 from apscheduler.schedulers.blocking import BlockingScheduler
 
 sched = BlockingScheduler()
-group = -56513923
-bot = telepot.Bot('298905015:AAGemYj2VEcS19bmqum9PsgJIZUyT_DKDFM')
+group = group_integer_id
+bot = telepot.Bot('api-here')
 
 @sched.scheduled_job('interval', weeks=1)
 def sendCTF():
